@@ -1,0 +1,115 @@
+$font-roboto: "Roboto", sans-serif;
+nav {
+  font-family: $font-roboto;
+  max-width: 120em;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  transform: scale(1.05);
+}
+
+.link {
+  font-size: 1.2rem;
+  color: #000000;
+  transition: transform 300ms ease-in;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.link:hover {
+  color: #ff5c00;
+}
+.sign-up {
+  font-size: 1.2rem;
+  background: #ff5c00;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-color: transparent;
+  outline: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  border-radius: 4px;
+}
+.sign-up:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  background: #fff8f5;
+  transition: transform 300ms ease-in;
+}
+
+.marketplace {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .links-container {
+    background: transparent;
+  }
+  .nav-center {
+    max-width: 1146px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .link {
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+  }
+  .sign-up {
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .marketplace {
+    display: block;
+    border-top: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid rgb(216, 216, 216);
+  }
+  .marketplace ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+  }
+  .marketplace ul a {
+    padding: 0.5rem 1rem;
+    color: #000000;
+  }
+}

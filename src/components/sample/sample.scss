@@ -1,0 +1,74 @@
+.group {
+  padding: 4em 2em;
+}
+
+.sample {
+  margin-bottom: 4rem;
+  .heading {
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      margin: 1rem 0;
+      p {
+        text-transform: capitalize;
+      }
+
+      p + .custom {
+        margin-left: 2rem;
+      }
+
+      .custom {
+        display: flex;
+        align-items: center;
+        p {
+          text-transform: uppercase;
+        }
+
+        .customer {
+          color: #0d019a;
+          font-weight: 500;
+          background: #eef8ff;
+          padding: 0.4rem;
+          border-radius: 2px;
+        }
+        .vendor {
+          color: #049a01;
+          font-weight: 500;
+          background: #f0ffee;
+          padding: 0.4rem;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .paragraph {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .flex {
+    display: grid;
+    place-items: center;
+  }
+  .group {
+    padding: 4em 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 4rem 0rem;
+    margin: 4rem auto;
+    max-width: 120em;
+  }
+  .paragraph {
+    max-width: 250px;
+  }
+}
